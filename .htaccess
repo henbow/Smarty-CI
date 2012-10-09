@@ -1,0 +1,6 @@
+Options -Indexes
+RewriteEngine on
+Options +FollowSymLinks
+RewriteRule ^$ index.php [L]
+RewriteCond $1 !^(index\.php|assets)
+RewriteRule ^(.*)$ index.php/$1 [L]
